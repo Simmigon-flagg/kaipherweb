@@ -6,7 +6,8 @@ import '@aws-amplify/ui-react/styles.css';
 import awsExports from './aws-exports';
 Amplify.configure(awsExports);
 
-export default function App() {
+
+const App = () => {
   return (
     <Authenticator>
       {({ signOut, user }) => (
@@ -18,3 +19,5 @@ export default function App() {
     </Authenticator>
   );
 }
+
+export default App;
